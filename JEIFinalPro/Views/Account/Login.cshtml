@@ -1,0 +1,79 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Admin Theme v3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="~/dashboard/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/dashboard/css/styles.css" rel="stylesheet">
+
+</head>
+<body class="login-bg">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Logo -->
+					<div class="logo">
+						<h1><a href="index.html">Login Screen </a></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form asp-action="Login" asp-controller="Account" method="post">
+
+	<div class="page-content container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-wrapper">
+					<div class="box">
+						<div class="content-wrap">
+							<h6>Sign In</h6>
+							<div class="social">
+								<a class="face_login" href="#">
+									<span class="face_icon">
+										<img src="~/dashboard/images/facebook.png" alt="fb">
+									</span>
+									<span class="text">Sign in with Facebook</span>
+								</a>
+								<div class="division">
+									<hr class="left">
+									<span>or</span>
+									<hr class="right">
+								</div>
+							</div>
+							<input class="form-control" asp-for="UserName" placeholder="Enter UserName">
+							<span asp-validation-for="UserName" class="text-danger"></span>
+							<input class="form-control" asp-for="Password" placeholder="Enter Password">
+						    <span asp-validation-for="Password" class="text-danger"></span>
+							<span class="text-danger">@ViewBag.err</span>
+							<div class="action">
+							    <input type="submit" value="Login" class="btn btn-primary signup" />
+							</div>
+						</div>
+					</div>
+
+					<div class="already">
+						<p>Don't have an account yet?</p>
+						<a asp-action="Register" asp-controller="Account">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </form>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="~/dashboard/bootstrap/js/bootstrap.min.js"></script>
+	<script src="~/dashboard/js/custom.js"></script>
+</body>
+</html>

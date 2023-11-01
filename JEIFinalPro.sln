@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JEIFinalPro", "JEIFinalPro\JEIFinalPro.csproj", "{86DFE33B-3021-4CC1-B7E4-74A84D4ADD68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86DFE33B-3021-4CC1-B7E4-74A84D4ADD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DFE33B-3021-4CC1-B7E4-74A84D4ADD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DFE33B-3021-4CC1-B7E4-74A84D4ADD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DFE33B-3021-4CC1-B7E4-74A84D4ADD68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19EA79F6-1E89-4EE0-BC1C-76F1FD7FC291}
+	EndGlobalSection
+EndGlobal
